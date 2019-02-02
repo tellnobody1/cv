@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir print
+rm print/*.aux print/*.log print/*.out print/*.pdf
+pdflatex --output-directory=print cv.tex
+
+echo "done."

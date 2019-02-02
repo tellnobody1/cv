@@ -1,0 +1,7 @@
+/index.htoc
+/index.haux
+/print/*.aux
+/print/*.log
+/print/*.out
+/web/*.htoc
+/web/*.haux
