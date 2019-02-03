@@ -1,4 +1,6 @@
-# C[urriculum][ ]V[itae]
+# cv
+
+My Curriculum Vitae
 
 ## Compile
 
@@ -9,7 +11,7 @@ bin/web
 
 ## Setup
 
-You need to install `LaTeX` for printable documents and `HeVeA` for HTML site.
+You need to install `LᴬTᴱX` for printable documents and `HᴱVᴱA` for HTML site.
 
 ### macOS
 
