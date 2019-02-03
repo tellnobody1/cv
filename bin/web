@@ -1,10 +1,7 @@
 #!/bin/bash
 
-rm index.html index/htoc
-hevea -exec xxdate.exe -fix -v -O index.tex -o index.html
-
 mkdir web
-rm web/*.html web/*.htoc
+rm web/cv.html
 hevea -exec xxdate.exe -fix -v -O cv.tex -o web/cv.html
   
 echo "done."
