@@ -11,7 +11,7 @@ bin/web
 
 ## Setup
 
-You need to install `LᴬTᴱX` for printable documents and `HᴱVᴱA` for HTML site.
+You need to install `ʟᴬᴛᴱx` for printable documents and `ʜᴱᴠᴱᴀ` for HTML site.
 
 ### macOS
 
