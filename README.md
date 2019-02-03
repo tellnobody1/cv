@@ -17,6 +17,8 @@ You need to install `LaTeX` for printable documents and `HeVeA` for HTML site.
 brew cask install mactex
 echo 'export PATH="$PATH:/Library/TeX/texbin"' >> ~/.bash_profile
 brew install hevea
+brew install wget
+wget http://hevea.inria.fr/distri/hevea.sty
 ```
 
 ### Ubuntu
