@@ -6,6 +6,7 @@
   Andrii Nemchenko\\
   telegram: \href{https://t.me/tellnobody1}{\nolinkurl{@tellnobody1}}\\
   email: \mailto{a.nemchenko@icloud.com}\\
+  github: \href{https://github.com/tellnobody1}{\nolinkurl{@tellnobody1}}\\
   location: Kyiv, Ukraine
 }
 \maketitle
@@ -29,19 +30,18 @@ Master of Science (2006 – 2012)\\
 Applied mathematics
 \section{Certification}
 \subsection{Functional Programming Principles in Scala}
-EPFL (École polytechnique fédérale de Lausanne)\\
-Dec 2013
+EPFL (École polytechnique fédérale de Lausanne)\\Dec 2013
 \section{Projects}
 \subsection{KVS}
-Jul 2014 – Present\\Playtech
+Jul 2014 – Present
 \paragraph{Stack} Scala, Akka (cluster, cluster-sharding), LevelDB (via jnr-ffi)
 \paragraph{Description}
-Closed-sourced abstract Scala storage framework with high-level API for handling linked lists of polymorphic data (feeds).\\
+\footahref{https://github.com/zero-deps/kvs}{Open-sourced} abstract Scala storage framework with high-level API for handling linked lists of polymorphic data (feeds).\\
 Designed with various backends in mind and to work in pure JVM environment. Implementation based on top of KAI (implementation of Amazon DynamoDB in Erlang) port with modification to use akka-cluster infrastructure.\\
 Currently main backend is LevelDB to support embedded setup alongside application. Feed API (add/entries/remove) is built on top of Key-Value API (put/get/delete).\\
 KVS is highly available distributed (AP) strong eventual consistent (SEC) and sequentially consistent (via cluster sharding) storage. It is used for data from sport and games events. In some configurations used as distributed network file system. Also can be a generic storage for application.
 \subsection{CMS}
-Apr 2013 – Present\\Playtech
+Feb 2017 – Aug 2019\\Playtech
 \paragraph{Stack} Scala, Akka (cluster-sharding, http-core), PureScript, Scala.js, Scalaz (core, effect), Argonaut, Scodec, Protobuf
 \paragraph{Description}
 Content management system with one cluster setup to serve dozen licensees each with up to 10 websites. CMS is all about storing data and working with UI. Data is stored to distributed KVS and UI is built with pure functional strongly typed language (PureScript) which produces robust and fail-safe UI. User files are handled by distributed filesystem and meta data is saved to KVS.
@@ -64,8 +64,9 @@ Documenting system and server for the applications. LaTeX based tools for genera
 \paragraph{Description}
 The platform provides the components to build the services which will be available to clients through unified Open API. The Framework is the set of applications which are bundled together as an OSGi features and OSGi bundles.
 \section{Interests}
-Blockchain, Compilers, Navigation\\
-Idris, Haskell, PureScript, Erlang, Rust, Swift, Kotlin\\
-HoTT, CT, Coq, Quantum computing
+Blockchain | Compiler | Navigation\\
+Idris | Haskell | Dotty | PureScript | Erlang | Rust | Swift | Kotlin\\
+HoTT | CT | Coq | Quantum Computing\\
+Longboarding | Snowboarding | PS4 | Animation | Music | Books | Travelling.
 % HEVEA \end{divstyle}
 \end{document}
