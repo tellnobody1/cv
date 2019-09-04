@@ -1,6 +1,7 @@
 \footerfalse
 
 \loadcssfile{https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css}
+\loadcssfile{font.css}
 
 \let\oldmeta=\@meta
 \renewcommand{\@meta}{
@@ -10,7 +11,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 \end{rawhtml}}
 
+\newstyle{body}{font-family:"cmu_serifroman"}
+\newstyle{p}{text-align:justify}
 \newstyle{.title}{margin-top:0}
 \newstyle{.title td}{padding:0 !important}
-\newstyle{.titlemain}{margin:0}
-\newstyle{.titlerest}{margin:0}
+\newstyle{.titlemain}{margin:0 0 2rem 0}
+\newstyle{.titlerest}{margin:0 0 2rem 0}
+\newstyle{.container}{width:38rem !important}
