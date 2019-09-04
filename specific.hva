@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 \end{rawhtml}}
 
-\newstyle{body}{font-family:"cmu_serifroman"}
+\newstyle{body}{font-family:"cmu_serifroman"!important}
 \newstyle{p}{text-align:justify}
 \newstyle{.title}{margin-top:0}
 \newstyle{.title td}{padding:0 !important}
