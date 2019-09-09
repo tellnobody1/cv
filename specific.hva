@@ -17,4 +17,4 @@
 \newstyle{.title td}{padding:0 !important}
 \newstyle{.titlemain}{margin:0 0 2rem 0}
 \newstyle{.titlerest}{margin:0 0 2rem 0}
-\newstyle{.container}{width:38rem !important}
+\newstyle{.container}{max-width:38rem !important}
