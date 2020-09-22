@@ -12,12 +12,12 @@
 
 \section{Experience}
 \begin{itemize}
-  \item[2020] Lead Developer at \footahref{https://www.londonstockexchange.com/stock/PTEC/playtech-plc}{Playtech plc}
-  \item[2017–2019] Software Architect
-  \item[2014–2016] Senior Scala Developer
+  \item[2020] Lead Developer (Scala) at \footahref{https://www.londonstockexchange.com/stock/PTEC/playtech-plc}{Playtech plc}
+  \item[2017–2019] Senior Software Engineer (Scala, PureScript)
+  \item[2014–2016] Senior Software Engineer (Scala)
   \item[2013] Functional Programming Principles in Scala at \footahref{https://www.epfl.ch/en/}{EPFL}
-  \item[2013–2014] Senior Java Developer
-  \item[2012–2013] Middle Java Developer
+  \item[2013–2014] Senior Software Engineer (Java)
+  \item[2012–2013] Software Engineer (Java)
   \item[2010–2012] Full-Stack Web Developer
   \item[2010–2011] English level B2 (CEFR) at \footahref{https://fcourses.com.ua}{FSCFL}
   \item[2006–2012] Applied mathematics (M.S.) at \footahref{https://www.univ.kiev.ua/en/}{TSNUK}
@@ -35,7 +35,7 @@ HackerRank:
 \pagebreak
 
 \section{Projects}
-\subsection{Key-value storage}
+\subsection{Key-Value Storage}
 GitHub: \href{https://github.com/zero-deps/kvs}{zero-deps/kvs}
 \paragraph{Stack} Scala, Akka Cluster, LevelDB
 \paragraph{Description}
@@ -44,25 +44,25 @@ Designed with various backends in mind and to work in pure JVM environment. Impl
 Currently main backend is LevelDB to support embedded setup alongside application. Feed API (add/entries/remove) is built on top of Key-Value API (put/get/delete).\\
 KVS is highly available distributed (AP) strong eventual consistent (SEC) and sequentially consistent (via cluster sharding) storage. It is used for data from sport and games events. In some configurations used as distributed network file system. Also can be a generic storage for application.
 
+\subsection{Application Server}
+\paragraph{Stack} Scala, Akka Cluster, Akka Streams
+\paragraph{Description}
+Application server with streaming idea in its core. The integration layer for services providers which unifies the different APIs and respect the providers limitations guarding their services from unexpected usage. Unified services structure with akka-stream based IO layer and KVS distributed storage engine. Also plays as the service provider for itself to provide event streaming for sports betting and additional data store interfaces for the client application.
+
 \subsection{Web Platform}
 \paragraph{Stack} Scala, ZIO, Akka Cluster, PureScript, Protocol Buffers
 \paragraph{Description}
 Developing and evolving Web Platform for licensees to create portals with player's account management, games hub, content-management system and integration with 3rd-party services and data providers.\\
 It is deployed as one cluster for dozen of licensees with dozens websites. Data is stored into distributed KVS and UI is built with pure functional strongly typed language (PureScript) which produces robust and fail-safe UI. User files are handled by distributed filesystem and meta data is saved to KVS.
 
-\subsection{Application Server}
-\paragraph{Stack} Scala, Akka Cluster, Akka Streams
-\paragraph{Description}
-Application server with streaming idea in its core. The integration layer for services providers which unifies the different APIs and respect the providers limitations guarding their services from unexpected usage. Unified services structure with akka-stream based IO layer and KVS distributed storage engine. Also plays as the service provider for itself to provide event streaming for sports betting and additional data store interfaces for the client application.
-
-\subsection{Monitoring}
+\subsection{Metrics}
 \paragraph{Stack} Scala, Akka Streams, PureScript
 \paragraph{Description}
-Monitoring application receives the metrics, stores and display them in the dashboard. With some basic analyse and triggers the monitor can notify the interested parties in the specific events (application crash, node down, specific user event occurs, etc). Visualization and performance reporting.
+Use cases: health monitoring of nodes/clusters; errors logging; usage of product features. Application receives metrics, stores and display them in the dashboard with visual charts and reports. Users of application are software engineers, business analysts (BA) and product owner (PO).
 
-\subsection{Documentation}
+\subsection{Docs Solution}
 \paragraph{Stack} Scala, LaTeX, HeVeA
 \paragraph{Description}
-Documenting system and server for the applications. LaTeX-based tools for generating the project documentation in HTML and PDF format.
+Documenting system and server for the applications with LaTeX-based tools for generating documentation in HTML and PDF formats.
 % HEVEA \end{divstyle}
 \end{document}
