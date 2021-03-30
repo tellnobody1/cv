@@ -1,7 +1,7 @@
 .DS_Store
-/print/*.aux
-/print/*.log
-/print/*.out
+/print/cv.aux
+/print/cv.log
+/print/cv.out
 /tmp/
-/web/*.haux
-/web/*.htoc
+/web/cv.haux
+/web/cv.htoc

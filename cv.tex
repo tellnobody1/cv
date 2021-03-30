@@ -3,10 +3,9 @@
 % HEVEA \begin{divstyle}{container}
 \title{Curriculum Vitae}
 \author{
-  Andrii Nemchenko\\
+  Andrii Nimchenko\\
   telegram: \href{https://t.me/tellnobody1}{@tellnobody1}\\
-  email: \mailto{andriinemchenko@gmail.com}\\
-  location: Kyiv, Ukraine
+  github: tellnobody1
 }
 \maketitle
 
@@ -23,68 +22,78 @@
   \item[2006–2012] Applied mathematics (M.S.) at \footahref{https://www.univ.kiev.ua/en/}{TSNUK}
 \end{itemize}
 
-\section{Public profiles}
-GitHub:
-\href{https://github.com/tellnobody1}{@tellnobody1} \\
-Stack Overflow:
-\href{https://stackoverflow.com/users/355491}{Andrii Nemchenko} \\
-HackerRank:
-\href{https://www.hackerrank.com/a\_nemchenko}{a\_nemchenko}
-
-\pagebreak
-
-\section{Open-Source Projects}
-
-\subsection{KVS}
-\github{zero-deps/kvs}
-\paragraph{} Scala, Akka Cluster, ZIO, RocksDB, LZ4, Protobuf
-\paragraph{}
-KVS is highly available distributed (AP) strong eventual consistent (SEC) and sequentially consistent storage.
-
-\subsection{Frontier}
-\github{zero-deps/frontier}
-\paragraph{} Scala, ZIO
-\paragraph{}
-High performant, pure-functional, effect-free websocket, http and udp server, http client and telegram bot.
-
-\subsection{Protobuf}
-\subsubsection{Scala}
-\github{zero-deps/protobuf-scala-macros}
-\paragraph{}
-Lightweight and fast serialization library for Scala based on Protocol Buffers without .proto files.
-
-\subsubsection{PureScript}
-\github{zero-deps/purescript-protobuf}
-\paragraph{}
-PureScript implementation of Protocol Buffers format.
-
-\subsubsection{Scala-to-PureScript}
-\github{zero-deps/protobuf-scala-purs}
-\paragraph{}
-PureScript meets Scala: Protocol Buffers generator from Scala classes.
-
-\subsection{Metrics}
-\github{zero-deps/metrics}
-\paragraph{} Scala, ZIO, PureScript, Protobuf
-\paragraph{}
-Metrics/health/logs server and client for Scala projects.
-
-\section{Closed-Source Projects}
+\section{Projects}
 
 \subsection{Application Server}
-\paragraph{} Scala, Akka Cluster, Akka Streams
+\paragraph{stack} Scala, Akka Cluster, Akka Streams
 \paragraph{}
 Application server with streaming idea in its core. The integration layer for services providers which unifies the different APIs and respect the providers limitations guarding their services from unexpected usage. Unified services structure with akka-stream based IO layer and KVS distributed storage engine. Also plays as the service provider for itself to provide event streaming for sports betting and additional data store interfaces for the client application.
 
 \subsection{Web Platform}
-\paragraph{} Scala, ZIO, Akka Cluster, PureScript, Protocol Buffers
+\paragraph{stack} Scala, ZIO, Akka Cluster, PureScript
 \paragraph{}
 Developing and evolving Web Platform for licensees to create portals with player's account management, games hub, content-management system and integration with 3rd-party services and data providers.\\
 It is deployed as one cluster for dozen of licensees with dozens websites. Data is stored into distributed KVS and UI is built with pure functional strongly typed language (PureScript) which produces robust and fail-safe UI. User files are handled by distributed filesystem and meta data is saved to KVS.
 
-\subsection{Docs Solution}
-\paragraph{} Scala, LaTeX, HeVeA
+\subsection{Key-Value Store}
+\paragraph{stack} Scala, Akka Cluster, ZIO, RocksDB
+\paragraph{}
+KVS is highly available distributed (AP) strong eventual consistent (SEC) and sequentially consistent storage.
+\github{zero-deps/kvs}
+
+\subsection{Frontier}
+\paragraph{stack} Scala, ZIO
+\paragraph{}
+High performant, pure-functional, effect-free websocket, http and udp server, http client and telegram bot.
+\github{zero-deps/frontier}
+
+\subsection{Umbrella}
+\paragraph{stack} Rust
+\paragraph{}
+Cross networks write data client.
+\github{flyingw/umbrella}
+
+\subsection{Proto}
+\paragraph{stack}{Scala 3 Macros, Protocol Buffers, PureScript, LaTeX}
+\paragraph{}
+Lightweight and fast binary serialization.
+\github{zero-deps/proto}
+
+\subsection{Metrics}
+\paragraph{stack} Scala, ZIO, PureScript
+\paragraph{}
+Metrics/health/logs server and client for Scala projects.
+\github{zero-deps/metrics}
+
+\subsection{Docs}
+\paragraph{Stack} Scala, LaTeX, HeVeA
 \paragraph{}
 Documenting system and server for the applications with LaTeX-based tools for generating documentation in HTML and PDF formats.
+
+\section{Courses}
+\begin{itemize}
+  \item \footahref{https://nobodytells.me/cv/cert/fp.pdf}{Function Programming}
+  \item \footahref{https://nobodytells.me/cv/cert/sec.pdf}{Application Security and Secure Coding Training}
+  \item \footahref{https://nobodytells.me/cv/cert/crypto.pdf}{Blockchain and cryptocurrencies}
+\end{itemize}
+
+\section{Certificates}
+\begin{itemize}
+  \item \footahref{https://nobodytells.me/cv/cert/cdl.pdf}{Computer Driving License}
+\end{itemize}
+
+\section{Bookshelf}
+\begin{itemize}
+  \item Homotopy Type Theory
+  \item Types and Programming Languages
+  \item Basic Category Theory for Computer Scientists
+  \item Type-Driven Development with Idris
+\end{itemize}
+
+%BEGIN LATEX
+\section*{}
+Curriculum Vitae in \href{https://nobodytells.me/cv/web/cv.html}{HTML}.
+%END LATEX
+
 % HEVEA \end{divstyle}
 \end{document}

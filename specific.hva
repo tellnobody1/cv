@@ -1,6 +1,5 @@
 \footerfalse
 
-\loadcssfile{dark.css}
 \loadcssfile{font.css}
 
 \let\oldmeta=\@meta

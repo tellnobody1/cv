@@ -26,6 +26,5 @@ wget http://hevea.inria.fr/distri/hevea.sty
 ### Ubuntu
 
 ```bash
-sudo apt-get install texlive-full
-sudo apt-get install hevea
+sudo apt install texlive-full hevea
 ```
