@@ -5,15 +5,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="generator" content="hevea 2.35">
 <style type="text/css">
+.c000{text-align:left;border:solid 1px;white-space:nowrap}
+.c001{text-align:right;border:solid 1px;white-space:nowrap}
+.floatrule{background-color: black; border: none; height: 1px; width: 80%}
 .li-itemize{margin:1ex 0ex;}
 div.footnotetext P{margin:0px; text-indent:1em;}
 .title{margin:2ex auto;text-align:center}
 .titlemain{margin:1ex 2ex 2ex 1ex;}
 .titlerest{margin:0ex 2ex;}
+.center{text-align:center;margin-left:auto;margin-right:auto;}
 div table{margin-left:inherit;margin-right:inherit;margin-bottom:2px;margin-top:2px}
 td table{margin:auto;}
 table{border-collapse:collapse;}
 td{padding:0;}
+.cellpadding1 tr td{padding:1px;}
 pre{text-align:left;margin-left:0ex;margin-right:auto;}
 blockquote{margin-left:4ex;margin-right:4ex;text-align:left;}
 td p{margin:0px;}
@@ -48,103 +53,119 @@ Andrii Nimchenko<br>
 </li><li class="li-itemize">2013–2014 Senior Software Engineer (Java)
 </li><li class="li-itemize">2012–2013 Software Engineer (Java)
 </li><li class="li-itemize">2010–2012 Full-Stack Web Engineer
-</li><li class="li-itemize">2010–2011 English level B2 (CEFR) at <a href="https://fcourses.com.ua">FSCFL</a>
-</li><li class="li-itemize">2006–2012 Applied mathematics (M.S.) at <a href="https://www.univ.kiev.ua/en/">TSNUK</a>
+</li><li class="li-itemize">2010–2011 English <a href="https://en.wikipedia.org/wiki/ 
+Common_European_Framework_of_Reference_for_Languages#Common_reference_levels">B2</a> at <a href="https://fcourses.com.ua">FSCFL</a>
+</li><li class="li-itemize">2006–2012 <a href="https://zakon.rada.gov.ua/laws/show/266-2015-%D0%BF/conv#n11">Applied Mathematics 113</a> (Master’s Degree) at <a href="http://om.univ.kiev.ua/en">TSNUK</a>
 </li></ul>
-<!--TOC section id="sec2" Projects-->
-<h2 class="section" id="sec2">2 Projects</h2><!--SEC END -->
-<!--TOC subsection id="sec3" Application Server-->
-<h3 class="subsection" id="sec3">2.1 Application Server</h3><!--SEC END -->
-<!--TOC paragraph id="sec4" stack-->
-<h4 class="paragraph" id="sec4">stack</h4><!--SEC END --><p> Scala, Akka Cluster, Akka Streams
+<!--TOC section id="sec2" Skills-->
+<h2 class="section" id="sec2">2 Skills</h2><!--SEC END --><blockquote class="table"><div class="center"><hr class="floatrule"></div>
+<table class="cellpadding1" border=1 style="border-spacing:0;"><tr><td class="c000"> Scala</td><td class="c001">9 years</td><td class="c000">Java</td><td class="c001">10 years </td></tr>
+<tr><td class="c000"> Scala 3</td><td class="c001">1 year  </td><td class="c000">NoSQL</td><td class="c001">8 years </td></tr>
+<tr><td class="c000"> ZIO</td><td class="c001">2 years</td><td class="c000">SQL</td><td class="c001">4 years </td></tr>
+<tr><td class="c000"> Akka</td><td class="c001">8 years</td><td class="c000">Frontend</td><td class="c001">9 years
+</td></tr>
+</table>
+<div class="center"><hr class="floatrule"></div></blockquote>
+<!--TOC section id="sec3" Projects-->
+<h2 class="section" id="sec3">3 Projects</h2><!--SEC END -->
+<!--TOC subsection id="sec4" Application Server-->
+<h3 class="subsection" id="sec4">3.1 Application Server</h3><!--SEC END -->
+<!--TOC paragraph id="sec5" stack-->
+<h4 class="paragraph" id="sec5">stack</h4><!--SEC END --><p> Scala, Akka Cluster, Akka Streams, KVS
 </p>
-<!--TOC paragraph id="sec5" -->
+<!--TOC paragraph id="sec6" -->
 <!--SEC END --><p>
 Application server with streaming idea in its core. The integration layer for services providers which unifies the different APIs and respect the providers limitations guarding their services from unexpected usage. Unified services structure with akka-stream based IO layer and KVS distributed storage engine. Also plays as the service provider for itself to provide event streaming for sports betting and additional data store interfaces for the client application.</p>
-<!--TOC subsection id="sec6" Web Platform-->
-<h3 class="subsection" id="sec6">2.2 Web Platform</h3><!--SEC END -->
-<!--TOC paragraph id="sec7" stack-->
-<h4 class="paragraph" id="sec7">stack</h4><!--SEC END --><p> Scala, ZIO, Akka Cluster, PureScript
+<!--TOC subsection id="sec7" Web Platform-->
+<h3 class="subsection" id="sec7">3.2 Web Platform</h3><!--SEC END -->
+<!--TOC paragraph id="sec8" stack-->
+<h4 class="paragraph" id="sec8">stack</h4><!--SEC END --><p> Scala, ZIO, Akka Cluster, PureScript, KVS
 </p>
-<!--TOC paragraph id="sec8" -->
+<!--TOC paragraph id="sec9" -->
 <!--SEC END --><p>
 Developing and evolving Web Platform for licensees to create portals with player’s account management, games hub, content-management system and integration with 3rd-party services and data providers.<br>
 It is deployed as one cluster for dozen of licensees with dozens websites. Data is stored into distributed KVS and UI is built with pure functional strongly typed language (PureScript) which produces robust and fail-safe UI. User files are handled by distributed filesystem and meta data is saved to KVS.</p>
-<!--TOC subsection id="sec9" Key-Value Store-->
-<h3 class="subsection" id="sec9">2.3 Key-Value Store</h3><!--SEC END -->
-<!--TOC paragraph id="sec10" stack-->
-<h4 class="paragraph" id="sec10">stack</h4><!--SEC END --><p> Scala, Akka Cluster, ZIO, RocksDB
+<!--TOC subsection id="sec10" Key-Value Store-->
+<h3 class="subsection" id="sec10">3.3 Key-Value Store</h3><!--SEC END -->
+<!--TOC paragraph id="sec11" stack-->
+<h4 class="paragraph" id="sec11">stack</h4><!--SEC END --><p> Scala, Akka Cluster, ZIO, RocksDB
 </p>
-<!--TOC paragraph id="sec11" -->
+<!--TOC paragraph id="sec12" -->
 <!--SEC END --><p>
 KVS is highly available distributed (AP) strong eventual consistent (SEC) and sequentially consistent storage.
 </p>
-<!--TOC paragraph id="sec12" code-->
-<h4 class="paragraph" id="sec12">code</h4><!--SEC END --><p><a href="https://github.com/zero-deps/kvs">github.com/zero-deps/kvs</a></p>
-<!--TOC subsection id="sec13" Frontier-->
-<h3 class="subsection" id="sec13">2.4 Frontier</h3><!--SEC END -->
-<!--TOC paragraph id="sec14" stack-->
-<h4 class="paragraph" id="sec14">stack</h4><!--SEC END --><p> Scala, ZIO
+<!--TOC paragraph id="sec13" code-->
+<h4 class="paragraph" id="sec13">code</h4><!--SEC END --><p><a href="https://github.com/zero-deps/kvs">github.com/zero-deps/kvs</a></p>
+<!--TOC subsection id="sec14" Travel App-->
+<h3 class="subsection" id="sec14">3.4 Travel App</h3><!--SEC END -->
+<!--TOC paragraph id="sec15" stack-->
+<h4 class="paragraph" id="sec15">stack</h4><!--SEC END --><p> Scala, ZIO, KVS
+All-in-one application for travelers: booking, tickets, car rental, navigation, guides.</p>
+<!--TOC subsection id="sec16" Umbrella-->
+<h3 class="subsection" id="sec16">3.5 Umbrella</h3><!--SEC END -->
+<!--TOC paragraph id="sec17" stack-->
+<h4 class="paragraph" id="sec17">stack</h4><!--SEC END --><p> Rust
 </p>
-<!--TOC paragraph id="sec15" -->
-<!--SEC END --><p>
-High performant, pure-functional, effect-free websocket, http and udp server, http client and telegram bot.
-</p>
-<!--TOC paragraph id="sec16" code-->
-<h4 class="paragraph" id="sec16">code</h4><!--SEC END --><p><a href="https://github.com/zero-deps/frontier">github.com/zero-deps/frontier</a></p>
-<!--TOC subsection id="sec17" Umbrella-->
-<h3 class="subsection" id="sec17">2.5 Umbrella</h3><!--SEC END -->
-<!--TOC paragraph id="sec18" stack-->
-<h4 class="paragraph" id="sec18">stack</h4><!--SEC END --><p> Rust
-</p>
-<!--TOC paragraph id="sec19" -->
+<!--TOC paragraph id="sec18" -->
 <!--SEC END --><p>
 Cross networks blockchain write data client.
 </p>
-<!--TOC paragraph id="sec20" code-->
-<h4 class="paragraph" id="sec20">code</h4><!--SEC END --><p><a href="https://github.com/flyingw/umbrella">github.com/flyingw/umbrella</a></p>
-<!--TOC subsection id="sec21" Proto-->
-<h3 class="subsection" id="sec21">2.6 Proto</h3><!--SEC END -->
-<!--TOC paragraph id="sec22" stack-->
-<h4 class="paragraph" id="sec22">stack</h4><!--SEC END --><p>Scala 3 Macros, Protocol Buffers, PureScript, LaTeX
+<!--TOC paragraph id="sec19" code-->
+<h4 class="paragraph" id="sec19">code</h4><!--SEC END --><p><a href="https://github.com/flyingw/umbrella">github.com/flyingw/umbrella</a></p>
+<!--TOC subsection id="sec20" Frontier-->
+<h3 class="subsection" id="sec20">3.6 Frontier</h3><!--SEC END -->
+<!--TOC paragraph id="sec21" stack-->
+<h4 class="paragraph" id="sec21">stack</h4><!--SEC END --><p> Scala, ZIO
 </p>
-<!--TOC paragraph id="sec23" -->
+<!--TOC paragraph id="sec22" -->
+<!--SEC END --><p>
+High performant, pure-functional, effect-free websocket, http and udp server, http client and telegram bot.
+</p>
+<!--TOC paragraph id="sec23" code-->
+<h4 class="paragraph" id="sec23">code</h4><!--SEC END --><p><a href="https://github.com/zero-deps/frontier">github.com/zero-deps/frontier</a></p>
+<!--TOC subsection id="sec24" Proto-->
+<h3 class="subsection" id="sec24">3.7 Proto</h3><!--SEC END -->
+<!--TOC paragraph id="sec25" stack-->
+<h4 class="paragraph" id="sec25">stack</h4><!--SEC END --><p>Scala 3 Macros, Protocol Buffers, PureScript, LaTeX
+</p>
+<!--TOC paragraph id="sec26" -->
 <!--SEC END --><p>
 Lightweight and fast binary serialization.
 </p>
-<!--TOC paragraph id="sec24" code-->
-<h4 class="paragraph" id="sec24">code</h4><!--SEC END --><p><a href="https://github.com/zero-deps/proto">github.com/zero-deps/proto</a></p>
-<!--TOC subsection id="sec25" Metrics-->
-<h3 class="subsection" id="sec25">2.7 Metrics</h3><!--SEC END -->
-<!--TOC paragraph id="sec26" stack-->
-<h4 class="paragraph" id="sec26">stack</h4><!--SEC END --><p> Scala, ZIO, PureScript
+<!--TOC paragraph id="sec27" code-->
+<h4 class="paragraph" id="sec27">code</h4><!--SEC END --><p><a href="https://github.com/zero-deps/proto">github.com/zero-deps/proto</a></p>
+<!--TOC subsection id="sec28" Metrics-->
+<h3 class="subsection" id="sec28">3.8 Metrics</h3><!--SEC END -->
+<!--TOC paragraph id="sec29" stack-->
+<h4 class="paragraph" id="sec29">stack</h4><!--SEC END --><p> Scala, ZIO, PureScript, KVS
 </p>
-<!--TOC paragraph id="sec27" -->
+<!--TOC paragraph id="sec30" -->
 <!--SEC END --><p>
 Metrics/health/logs server and client for Scala projects.
 </p>
-<!--TOC paragraph id="sec28" code-->
-<h4 class="paragraph" id="sec28">code</h4><!--SEC END --><p><a href="https://github.com/zero-deps/metrics">github.com/zero-deps/metrics</a></p>
-<!--TOC subsection id="sec29" Docs-->
-<h3 class="subsection" id="sec29">2.8 Docs</h3><!--SEC END -->
-<!--TOC paragraph id="sec30" Stack-->
-<h4 class="paragraph" id="sec30">Stack</h4><!--SEC END --><p> Scala, LaTeX, HeVeA
+<!--TOC paragraph id="sec31" code-->
+<h4 class="paragraph" id="sec31">code</h4><!--SEC END --><p><a href="https://github.com/zero-deps/metrics">github.com/zero-deps/metrics</a></p>
+<!--TOC subsection id="sec32" Docs-->
+<h3 class="subsection" id="sec32">3.9 Docs</h3><!--SEC END -->
+<!--TOC paragraph id="sec33" Stack-->
+<h4 class="paragraph" id="sec33">Stack</h4><!--SEC END --><p> Scala, LaTeX, HeVeA
 </p>
-<!--TOC paragraph id="sec31" -->
+<!--TOC paragraph id="sec34" -->
 <!--SEC END --><p>
 Documenting system and server for the applications with LaTeX-based tools for generating documentation in HTML and PDF formats.</p>
-<!--TOC section id="sec32" Courses-->
-<h2 class="section" id="sec32">3 Courses</h2><!--SEC END --><ul class="itemize"><li class="li-itemize">
+<!--TOC section id="sec35" Courses, Trainings and Certificates-->
+<h2 class="section" id="sec35">4 Courses, Trainings and Certificates</h2><!--SEC END --><ul class="itemize"><li class="li-itemize">
 <a href="https://nobodytells.me/cv/cert/fp.pdf">Function Programming</a>
+</li><li class="li-itemize">Database Systems and SQL
+</li><li class="li-itemize">Data Structures and Algorithms
+</li><li class="li-itemize">Machine Learning
+</li><li class="li-itemize">Discrete Mathematics
 </li><li class="li-itemize"><a href="https://nobodytells.me/cv/cert/sec.pdf">Application Security and Secure Coding Training</a>
-</li><li class="li-itemize"><a href="https://nobodytells.me/cv/cert/crypto.pdf">Blockchain and cryptocurrencies</a>
+</li><li class="li-itemize"><a href="https://nobodytells.me/cv/cert/crypto.pdf">Blockchain and Cryptocurrencies</a>
+</li><li class="li-itemize"><a href="https://nobodytells.me/cv/cert/cdl.pdf">Computer Driving License</a>
 </li></ul>
-<!--TOC section id="sec33" Certificates-->
-<h2 class="section" id="sec33">4 Certificates</h2><!--SEC END --><ul class="itemize"><li class="li-itemize">
-<a href="https://nobodytells.me/cv/cert/cdl.pdf">Computer Driving License</a>
-</li></ul>
-<!--TOC section id="sec34" Bookshelf-->
-<h2 class="section" id="sec34">5 Bookshelf</h2><!--SEC END --><ul class="itemize"><li class="li-itemize">
+<!--TOC section id="sec36" Bookshelf-->
+<h2 class="section" id="sec36">5 Bookshelf</h2><!--SEC END --><ul class="itemize"><li class="li-itemize">
 Homotopy Type Theory
 </li><li class="li-itemize">Types and Programming Languages
 </li><li class="li-itemize">Basic Category Theory for Computer Scientists
