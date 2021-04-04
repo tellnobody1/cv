@@ -1,7 +1,9 @@
 #!/bin/bash
 
 mkdir print
-rm print/cv.pdf
+trash print/cv.pdf
+trash print/re.pdf
 lualatex --output-directory=print cv.tex
+lualatex --output-directory=print re.tex
 
 echo "done."
