@@ -1,4 +1,6 @@
 \input{article}
+\loadcssfile{cv.css}
+
 \begin{document}
 % HEVEA \begin{divstyle}{container}
 \title{Curriculum Vitae}
@@ -15,22 +17,49 @@
   \item[2017–2019] Lead Software Engineer (Scala, PureScript)
   \item[2014–2016] Senior Software Engineer (Scala, Akka)
   \item[2013–2013] Functional Programming Principles in Scala at \footahref{https://www.epfl.ch/en/}{EPFL}
-  \item[2013–2014] Senior Software Engineer (Java)
-  \item[2012–2013] Software Engineer (Java)
+  \item[2013–2014] Senior Software Engineer
+  \item[2012–2013] Software Engineer
   \item[2010–2012] Full-Stack Web Engineer
   \item[2010–2011] English \footahref{https://en.wikipedia.org/wiki/\\Common\_European\_Framework\_of\_Reference\_for\_Languages\#Common\_reference\_levels}{B2} at \footahref{https://fcourses.com.ua}{FSCFL}
   \item[2006–2012] \footahref{https://zakon.rada.gov.ua/laws/show/266-2015-\%D0\%BF/conv\#n11}{Applied Mathematics 113} (Master's Degree) at \footahref{http://om.univ.kiev.ua/en}{TSNUK}
 \end{itemize}
 
 \section{Skills}
-\begin{table}[H]
-  \begin{tabular}{lr||lr}
-  Scala   &  9 years    & Java     & 10 years \\ \hline
-  Scala 3 &  1 year\:\, & NoSQL    &  8 years \\ \hline
-  ZIO     &  2 years    & SQL      &  4 years \\ \hline
-  Akka    &  8 years    & Frontend &  9 years
-  \end{tabular}
-\end{table}
+
+%HEVEA\begin{table}[H]
+%HEVEA  \begin{tabular}{l|rl||l|rl}
+%HEVEA  Scala   &  9 & years & Java     & 10 & years \\ \hline
+%HEVEA  Scala 3 &  1 & year  & NoSQL    &  8 & years \\ \hline
+%HEVEA  ZIO     &  2 & years & SQL      &  4 & years \\ \hline
+%HEVEA  Akka    &  8 & years & Frontend &  9 & years
+%HEVEA  \end{tabular}
+%HEVEA\end{table}
+
+%BEGIN LATEX
+\begin{ganttchart}[
+    vgrid,
+    group/.append style={draw=black, fill=lightgray},
+    y unit chart=0.73cm
+  ]{9}{21}
+  \gantttitle{Years}{13} \\
+  \gantttitlelist{09,...,21}{1} \\
+  \ganttgroup{Scala}{13}{21} \\
+  \ganttbar{2.x}{13}{20} \\
+  \ganttlinkedbar{3.x}{21}{21} \\
+  \ganttbar{Akka}{14}{21} \\
+  \ganttbar{Scalaz}{14}{18} \\
+  \ganttlinkedbar{ZIO}{19}{21} \\
+  \ganttgroup{Java}{12}{21} \\
+  \ganttbar{7.x}{12}{13} \\
+  \ganttgroup{Database}{09}{21} \\
+  \ganttbar{SQL}{09}{11} \ganttlinkedbar{}{13}{13} \\
+  \ganttlinkedbar{NoSQL}{14}{21} \\
+  \ganttgroup{Frontend}{10}{21} \\
+  \ganttbar{JavaScript}{10}{11} \\
+  \ganttlinkedbar{Mobile}{12}{12} \\
+  \ganttbar{PureScript}{17}{19}
+\end{ganttchart}
+%END LATEX
 
 \section{Projects}
 
