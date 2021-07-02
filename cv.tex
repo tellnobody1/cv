@@ -1,89 +1,159 @@
 \input{article}
-\loadcssfile{cv.css}
 
 \begin{document}
-% HEVEA \begin{divstyle}{container}
 \title{Curriculum Vitae}
-\author{
-  Andrii Nimchenko, Apr 04, 1989\\
-  +380(98)446-38-22\\
-  github.com/tellnobody1\\
-  github.com/zero-deps
-}
+\author{}
 \date{}
 \maketitle
 
-\section{Experience}
+\section*{Contact}
 \begin{itemize}
-  \item[2020–2021] Lead Software Engineer (Scala 3, ZIO) \textit{at \footahref{https://www.londonstockexchange.com/stock/PTEC/playtech-plc}{Playtech}}
-  \item[2017–2019] Lead Software Engineer (Scala, PureScript)
-  \item[2014–2016] Senior Software Engineer (Scala, Akka)
-  \item[2013–2013] Functional Programming Principles in Scala \textit{at \footahref{https://www.epfl.ch/en/}{École de Lausanne}}
-  \item[2013–2014] Senior Software Engineer
-  \item[2012–2013] Software Engineer
-  \item[2010–2012] Full-Stack Web Engineer
-  \item[2010–2011] English \footahref{https://en.wikipedia.org/wiki/\\Common\_European\_Framework\_of\_Reference\_for\_Languages\#Common\_reference\_levels}{B2} \textit{at \footahref{https://fcourses.com.ua}{First Courses of Kyiv}}
-  \item[2006–2012] \footahref{https://zakon.rada.gov.ua/laws/show/266-2015-\%D0\%BF/conv\#n11}{Applied Mathematics 113} (Master's Degree) \textit{at \footahref{http://om.univ.kiev.ua/en}{University of Kyiv}}
+  \item[Name] Andrii Nemchenko
+  \item[Birthday] April 12, 1989
+  \item[Phone] +380 (98) 446-38-22
+  \item[Languages] English, Ukrainian
+  \item[Email] \href{mailto:andriinemchenko@gmail.com}{andriinemchenko@gmail.com}
+  \item[GitHub] \href{https://github.com/tellnobody1}{@tellnobody1}
+  \item[GitHub] \href{https://github.com/zero-deps}{@zero-deps}
+  \item[GitHub] top 100 in Ukraine
+  \item[StackOverflow] top 5\% overall
 \end{itemize}
 
-\section{Skills}
+\section*{Education}
 
-%HEVEA\begin{table}[H]
-%HEVEA  \begin{tabular}{l|rl||l|rl}
-%HEVEA  Scala   &  9 & years & Java     & 10 & years \\ \hline
-%HEVEA  Scala 3 &  1 & year  & NoSQL    &  8 & years \\ \hline
-%HEVEA  ZIO     &  2 & years & SQL      &  4 & years \\ \hline
-%HEVEA  Akka    &  8 & years & FE       &  9 & years
-%HEVEA  \end{tabular}
-%HEVEA\end{table}
+\subsection*{University of Kyiv, 2006–2012}
+\subsubsection*{Cybernetics, 113 Applied Mathematics}
+\begin{itemize}
+  \item Database Systems and SQL
+  \item Data Structures and Algorithms
+  \item Machine Learning
+  \item Discrete Mathematics
+\end{itemize}
 
-%BEGIN LATEX
+\subsection*{First Courses of Kyiv, 2010–2011}
+\begin{itemize}
+  \item English B2 (upper intermediate)
+\end{itemize}
+
+\subsection*{École de Lausanne, 2013}
+\begin{itemize}
+  \item \href{https://tellnobody.space/cv/cert/fp.pdf}{Function Programming}
+\end{itemize}
+
+\subsection*{Checkmarx, 2020}
+\begin{itemize}
+  \item \href{https://tellnobody.space/cv/cert/sec.pdf}{Application Security and Secure Coding Training}
+\end{itemize}
+
+\subsection*{Diia, 2020}
+\begin{itemize}
+  \item \href{https://tellnobody.space/cv/cert/crypto.pdf}{Blockchain and Cryptocurrencies}
+  \item \href{https://tellnobody.space/cv/cert/cdl.pdf}{Computer Driving License}
+\end{itemize}
+
+\subsection*{Princeton University, 2021}
+\begin{itemize}
+  \item Bitcoin and Cryptocurrency Technologies
+\end{itemize}
+
+\subsection*{Autodidacticism}
+\begin{itemize}
+  \item Homotopy Type Theory
+  \item Type Theory
+  \item Category Theory
+  \item Dependent Types
+\end{itemize}
+
+\section*{Skills}
 \begin{ganttchart}[
     vgrid,
     group/.append style={draw=black, fill=lightgray},
     y unit chart=0.73cm
-  ]{9}{21}
-  \gantttitle{Years}{13} \\
-  \gantttitlelist{09,...,21}{1} \\
-  \ganttgroup{Scala}{13}{21} \\
-  \ganttbar{2.x}{13}{20} \\
-  \ganttlinkedbar{3.x}{21}{21} \\
+  ]{10}{21}
+  \gantttitle{Years}{12} \\
+  \gantttitlelist{10,...,21}{1} \\
+  \ganttbar{Scala}{14}{20} \\
+  \ganttlinkedbar{Dotty}{21}{21} \\
   \ganttbar{Akka}{14}{21} \\
   \ganttbar{Scalaz}{14}{18} \\
   \ganttlinkedbar{ZIO}{19}{21} \\
   \ganttbar{Java}{12}{13} \\
-  \ganttgroup{Database}{09}{21} \\
-  \ganttbar{SQL}{09}{11} \ganttlinkedbar{}{13}{13} \\
-  \ganttlinkedbar{NoSQL}{14}{21} \\
-  \ganttgroup{FE}{10}{21} \\
-  \ganttbar{JavaScript}{10}{11} \\
-  \ganttbar{PureScript}{17}{19}
+  \ganttbar{SQL}{10}{11} \ganttlinkedbar{}{13}{13} \\
+  \ganttlinkedbar{NoSQL}{14}{21}
 \end{ganttchart}
-%END LATEX
+\paragraph{Additional languages} PureScript, JavaScript, Rust, Dart, Idris.
 
-\section{Projects}
+\section*{Work Experience}
 
-\subsection{Application Server}
-\paragraph{stack} Scala, Akka Cluster, Akka Streams, KVS
-\paragraph{}
-Application server with streaming idea in its core. The integration layer for services providers which unifies the different APIs and respect the providers limitations guarding their services from unexpected usage. Unified services structure with akka-stream based IO layer and KVS distributed storage engine. Also plays as the service provider for itself to provide event streaming for sports betting and additional data store interfaces for the client application.
+\subsection*{2020–2021, Team Leader}
+\subsubsection*{Stack: Dotty, ZIO, NoSQL}
 
-\subsection{Web Platform}
-\paragraph{stack} Scala, ZIO, Akka Cluster, PureScript, KVS
-\paragraph{}
+\paragraph{Metrics Server}
+Metrics/health/logs server and client.\\
+Scala, ZIO, PureScript, KVS.\\
+\href{https://github.com/zero-deps/metrics}{zero-deps/metrics}
+
+\paragraph{WebSocket Server}
+High performant, pure-functional, effect-free websocket, http and udp server, http client and telegram bot.\\
+Scala, ZIO.\\
+\href{https://github.com/zero-deps/frontier}{zero-deps/frontier}
+
+\paragraph{Binary Protocol}
+Lightweight and fast binary serialization.\\
+Dotty Macros, Protocol Buffers, PureScript, LaTeX.\\
+\href{https://github.com/zero-deps/proto}{zero-deps/proto}.
+
+\subsection*{2019–2020, Developer}
+
+\paragraph{Travel App}
+\subsubsection*{Stack: Scala, ZIO, NoSQL}
+All-in-one application for travelers: booking, tickets, car rental, navigation, guides.\\
+Scala, ZIO, KVS
+
+\subsection*{2017–2019, Developer}
+\subsubsection*{Stack: Scala, Akka, NoSQL, PureScript}
+
+\paragraph{Web Platform}
 Developing and evolving Web Platform for licensees to create portals with player's account management, games hub, content-management system and integration with 3rd-party services and data providers.\\
-It is deployed as one cluster for dozen of licensees with dozens websites. Data is stored into distributed KVS and UI is built with pure functional strongly typed language (PureScript) which produces robust and fail-safe UI. User files are handled by distributed filesystem and meta data is saved to KVS.
+It is deployed as one cluster for dozen of licensees with dozens websites. Data is stored into distributed KVS and UI is built with pure functional strongly typed language (PureScript) which produces robust and fail-safe UI. User files are handled by distributed filesystem and meta data is saved to KVS.\\
+Scala, ZIO, Akka Cluster, PureScript, KVS.
 
-\subsection{Key-Value Store}
-\paragraph{stack} Scala, Akka Cluster, ZIO, RocksDB
-\paragraph{}
-KVS is highly available distributed (AP) strong eventual consistent (SEC) and sequentially consistent storage.
-\github{zero-deps/kvs}
+\paragraph{Key-Value Store}
+KVS is highly available distributed (AP) strong eventual consistent (SEC) and sequentially consistent storage.\\
+Scala, Akka Cluster, ZIO, RocksDB.\\
+\href{https://github.com/zero-deps/kvs}{zero-deps/kvs}
 
-\subsection{Travel App}
-\paragraph{stack} Scala, ZIO, KVS
-\paragraph{}
-All-in-one application for travelers: booking, tickets, car rental, navigation, guides.
+\subsection*{2014–2016, Developer}
+\subsubsection*{Stack: Scala, Akka, NoSQL}
+
+\paragraph{Application Server}
+Application server with streaming idea in its core. The integration layer for services providers which unifies the different APIs and respect the providers limitations guarding their services from unexpected usage. Unified services structure with akka-stream based IO layer and KVS distributed storage engine. Also plays as the service provider for itself to provide event streaming for sports betting and additional data store interfaces for the client application.
+Scala, Akka Cluster, Akka Streams, KVS.
+
+\paragraph{Documentation Solution}
+Documenting system and server for the applications with LaTeX-based tools for generating documentation in HTML and PDF formats.
+Scala, LaTeX, HeVeA.
+
+\subsection*{2013–2014, Developer}
+\subsubsection*{Stack: Java, Spring, SQL}
+\paragraph{Gaming Web Portal}
+
+\subsection*{2012–2013, Developer}
+\subsubsection*{Stack: Java, GWT}
+\paragraph{Mobile Gaming Platform}
+
+\subsection*{2010–2012, Developer}
+\subsubsection*{Stack: Web Backend, SQL}
+\paragraph{Social Network}
+
+\subsection*{2009–2012, Student}
+\subsubsection*{Stack: Java, C\#, C++, Pascal}
+
+\paragraph{Cancer Detection Software}
+Detection of breast cancer on early stages using machine learning algorithm modified to work with small amount of training data.
+
+\paragraph{Optimal Irrigation of Soil}
+Calculation and visualization of optimal irrigation of soil for selected plants to effectively use water supply in rainless regions.
 
 %\subsection{Umbrella of Blockchains}
 %\paragraph{stack} Rust
@@ -91,68 +161,4 @@ All-in-one application for travelers: booking, tickets, car rental, navigation, 
 %Cross networks blockchain write data client.
 %\github{flyingw/umbrella}
 
-\subsection{Frontier Web Server}
-\paragraph{stack} Scala, ZIO
-\paragraph{}
-High performant, pure-functional, effect-free websocket, http and udp server, http client and telegram bot.
-\github{zero-deps/frontier}
-
-\subsection{Binary Serialization}
-\paragraph{stack}{Scala 3 Macros, Protocol Buffers, PureScript, LaTeX}
-\paragraph{}
-Lightweight and fast binary serialization.
-\github{zero-deps/proto}
-
-\subsection{Metrics Server}
-\paragraph{stack} Scala, ZIO, PureScript, KVS
-\paragraph{}
-Metrics/health/logs server and client for Scala projects.
-\github{zero-deps/metrics}
-
-\subsection{Documentation Solution}
-\paragraph{Stack} Scala, LaTeX, HeVeA
-\paragraph{}
-Documenting system and server for the applications with LaTeX-based tools for generating documentation in HTML and PDF formats.
-
-\subsection{Cancer Detection Software}
-\paragraph{}
-Detection of breast cancer on early stages using machine learning algorithm modified to work with small amount of training data.
-
-\subsection{Optimal Irrigation of Soil}
-\paragraph{}
-Calculation and visualization of optimal irrigation of soil for selected plants to effectively use water supply in rainless regions.
-
-\section{Courses, Trainings and Certificates}
-\begin{itemize}
-  \item \footahref{https://tellnobody.space/cv/cert/fp.pdf}{Function Programming} \textit{by École de Lausanne}
-  \item Database Systems and SQL \textit{by University of Kyiv}
-  \item Data Structures and Algorithms \textit{by University of Kyiv}
-  \item Machine Learning \textit{by University of Kyiv}
-  \item Discrete Mathematics \textit{by University of Kyiv}
-  \item \footahref{https://tellnobody.space/cv/cert/sec.pdf}{Application Security and Secure Coding Training} \textit{by Checkmarx}
-  \item Bitcoin and Cryptocurrency Technologies \textit{by Princeton University}
-  \item \footahref{https://tellnobody.space/cv/cert/crypto.pdf}{Blockchain and Cryptocurrencies} \textit{by Diia}
-  \item \footahref{https://tellnobody.space/cv/cert/cdl.pdf}{Computer Driving License} \textit{by Diia}
-\end{itemize}
-
-\section{Bookshelf}
-\begin{itemize}
-  \item Homotopy Type Theory
-  \item Types and Programming Languages
-  \item Basic Category Theory for Computer Scientists
-  \item Type-Driven Development with Idris
-\end{itemize}
-
-\section{Stats}
-\begin{tabular}{l|l}
-GitHub & \#76 in Ukraine \\
-StackOverflow & top 5\% overall
-\end{tabular}
-
-%BEGIN LATEX
-\section{Online}
-Curriculum Vitae is available online at \href{https://tellnobody.space/cv/}{tellnobody.space/cv}.
-%END LATEX
-
-% HEVEA \end{divstyle}
 \end{document}

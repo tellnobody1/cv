@@ -1,7 +1,0 @@
-#!/bin/bash
-
-mkdir web
-rm web/cv.html
-hevea -exec xxdate.exe -fix -v -O cv.tex -o web/cv.html
-  
-echo "done."

@@ -2,7 +2,8 @@
 
 mkdir print
 trash print/cv.pdf
-trash print/re.pdf
 lualatex --output-directory=print cv.tex
+trash ./cv.pdf
+cp print/cv.pdf ./cv.pdf
 
 echo "done."
